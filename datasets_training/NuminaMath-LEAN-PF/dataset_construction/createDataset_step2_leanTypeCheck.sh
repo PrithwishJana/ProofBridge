@@ -21,6 +21,6 @@ strt_indx=$(( SLURM_ARRAY_TASK_ID * 1000 ))
 strt_indx_padded=$(printf "%06d" $strt_indx)
 
 # Run Python script
-python ./datasets_training/NuminaMath-LEAN/dataset_construction/createDataset_step2_leanTypeCheck.py \
+python ./datasets_training/NuminaMath-LEAN-PF/dataset_construction/createDataset_step2_leanTypeCheck.py \
        --strt_indx $strt_indx \
-       | tee ./datasets_training/NuminaMath-LEAN/step2Parts/LOG_step2_leanTypeCheck_${strt_indx_padded}.txt
+       | tee ./datasets_training/NuminaMath-LEAN-PF/step2Parts/LOG_step2_leanTypeCheck_${strt_indx_padded}.txt

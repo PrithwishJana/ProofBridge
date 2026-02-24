@@ -2,7 +2,7 @@ import pandas as pd
 import glob
 
 # Pattern to match your files
-file_pattern = "./datasets_training/NuminaMath-LEAN/step3Parts/*.csv"
+file_pattern = "./datasets_training/NuminaMath-LEAN-PF/step3Parts/*.csv"
 
 # Read all matching files
 all_files = glob.glob(file_pattern)

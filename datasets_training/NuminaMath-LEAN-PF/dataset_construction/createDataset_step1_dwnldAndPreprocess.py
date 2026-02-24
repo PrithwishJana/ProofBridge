@@ -77,7 +77,7 @@ if __name__ == "__main__":
 
     newDataset = join_rawNLDescription(ds, problem_to_solution)
     df = pd.DataFrame(newDataset)
-    output_file = "./datasets_training/NuminaMath-LEAN/dataset_step1.csv" # new csv file
+    output_file = "./datasets_training/NuminaMath-LEAN-PF/dataset_step1.csv" # new csv file
     # save to CSV
     df.to_csv(output_file, index=False)
     print(f"Processed file written to {output_file}")

@@ -8,7 +8,7 @@ import re
 import google.generativeai as genai
 
 # put your API key here
-genai.configure(api_key="AIzaSyCmeQu6GS2Av3AH5_VM1iOp8twuF8gFAe0")
+genai.configure(api_key="XX")
 
 SAVE_FREQ = 4
 
@@ -333,8 +333,8 @@ if __name__ == "__main__":
     strt_indx_padded = f"{strt_indx:06d}"
 
     # Get the "AI-MO/NuminaMath-LEAN" dataset
-    output_file = f"./datasets_training/NuminaMath-LEAN/step3Parts/dataset_step3Part-{strt_indx_padded}.csv"
-    main_dataset = f"./datasets_training/NuminaMath-LEAN/step2Parts/dataset_step2Part-{strt_indx_padded}.csv"
+    output_file = f"./datasets_training/NuminaMath-LEAN-PF/step3Parts/dataset_step3Part-{strt_indx_padded}.csv"
+    main_dataset = f"./datasets_training/NuminaMath-LEAN-PF/step2Parts/dataset_step2Part-{strt_indx_padded}.csv"
     if os.path.exists(output_file):
         # Load the previously written file
         df_out = pd.read_csv(output_file, dtype=str).fillna("")

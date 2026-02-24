@@ -82,11 +82,11 @@ if __name__ == "__main__":
     strt_indx_padded = f"{strt_indx:06d}"
 
     # Get the "AI-MO/NuminaMath-LEAN" dataset
-    output_file = f"./datasets_training/NuminaMath-LEAN/step2Parts/dataset_step2Part-{strt_indx_padded}.csv"
+    output_file = f"./datasets_training/NuminaMath-LEAN-PF/step2Parts/dataset_step2Part-{strt_indx_padded}.csv"
     if os.path.exists(output_file):
         input_file = output_file
     else:
-        input_file = "./datasets_training/NuminaMath-LEAN/dataset_step1_dwnldAndPreprocess.csv"
+        input_file = "./datasets_training/NuminaMath-LEAN-PF/dataset_step1_dwnldAndPreprocess.csv"
     # Read CSV with pandas
     df = pd.read_csv(input_file, dtype=str)
     df = df.fillna("")
