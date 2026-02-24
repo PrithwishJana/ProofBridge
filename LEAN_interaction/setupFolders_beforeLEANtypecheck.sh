@@ -1,11 +1,11 @@
 #!/bin/bash
 
 #--------------Ensure I'm at correct path----------------
-if [ "$(basename "$PWD")" != "PartitionAndProve" ]; then
-  echo "❌ Please run this script from inside ./PartitionAndProve"
+if [ "$(basename "$PWD")" != "ProofBridge" ]; then
+  echo "❌ Please run this script from inside ./ProofBridge"
   exit 1
 fi
-echo "✅ You are in ./PartitionAndProve"
+echo "✅ You are in ./ProofBridge"
 #----------------
 
 #--------------Activate virtual environment----------------

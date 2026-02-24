@@ -58,7 +58,7 @@ source ~/lean_env/bin/activate
 ## Read the Training Dataset:
 
 ```bash
-python ./datasets_training/NuminaMath-LEAN/getDataset.py
+python ./datasets_training/NuminaMath-LEAN-PF/getDataset.py
 ```
 
 This'll create a data structure called `pairs`, that's a list of tuples (informal_theoremproof_pair, formal_theoremproof_pair). This code also prints the first two elements from `pairs` for convenience.
@@ -80,7 +80,7 @@ mv ../autoformalization-jtemb ~/scratch/
 ln -s ~/scratch/autoformalization-jtemb ../autoformalization-jtemb
 ```
 
-After this, you can call the `check_repl(...)` function in `./LEAN_interaction/checkLEAN.py` for LEAN type-checking. See an example of how to use it, in `./datasets_training/NuminaMath-LEAN/dataset_construction/createDataset_step2_leanTypeCheck.py`.
+After this, you can call the `check_repl(...)` function in `./LEAN_interaction/checkLEAN.py` for LEAN type-checking. See an example of how to use it, in `./datasets_training/NuminaMath-LEAN-PF/dataset_construction/createDataset_step2_leanTypeCheck.py`.
 
 ## Setting up interactive GPU shell (if in a slurm-based system)
 
