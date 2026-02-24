@@ -24,7 +24,7 @@ for task_id in $(seq 0 104); do
     echo "Running task $task_id (strt_indx=$strt_indx_padded)"
 
     # Run Python script
-    python ./datasets_training/NuminaMath-LEAN/createDataset_step3.py \
+    python ./datasets_training/NuminaMath-LEAN-PF/createDataset_step3.py \
            --strt_indx $strt_indx 2>&1 \
-           | tee ./datasets_training/NuminaMath-LEAN/createDataset_step3LOG_${strt_indx_padded}.txt
+           | tee ./datasets_training/NuminaMath-LEAN-PF/createDataset_step3LOG_${strt_indx_padded}.txt
 done

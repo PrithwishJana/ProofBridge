@@ -21,6 +21,6 @@ strt_indx=$(( SLURM_ARRAY_TASK_ID * 1000 ))
 strt_indx_padded=$(printf "%06d" $strt_indx)
 
 # Run Python script
-python ./datasets_training/NuminaMath-LEAN/dataset_construction/createDataset_step3_addNLproofs.py \
+python ./datasets_training/NuminaMath-LEAN-PF/dataset_construction/createDataset_step3_addNLproofs.py \
        --strt_indx $strt_indx 2>&1 \
-       | tee ./datasets_training/NuminaMath-LEAN/step3Parts/LOG_step3_addNLproofs_${strt_indx_padded}.txt
+       | tee ./datasets_training/NuminaMath-LEAN-PF/step3Parts/LOG_step3_addNLproofs_${strt_indx_padded}.txt
