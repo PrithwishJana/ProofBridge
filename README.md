@@ -2,9 +2,9 @@
 
 Published at ICLR-2026 (14th International Conference on Learning Representations), 23-27 April 2026,  Rio de Janeiro, Brazil
 
-Pre-print and supplementary available at: https://arxiv.org/abs/2306.06755
+Pre-print and appendix available at: https://arxiv.org/abs/2510.15681
 
-## Step 1: Load required modules (reqd. for ComputeCanada)
+## Step 1: Load required modules (reqd. for slurm-based systems)
 ```bash
 module load gcc arrow/15.0.1 opencv/4.11.0
 ```
@@ -85,7 +85,7 @@ After this, you can call the `check_repl(...)` function in `./LEAN_interaction/c
 ## Setting up interactive GPU shell (if in a slurm-based system)
 
 ```bash
-srun --account=def-vganesh --gpus-per-node=h100:1 --cpus-per-task=8 --mem=128000 --time=0-01:15 --job-name=vllm --pty bash
+srun --account=def-ACCOUNT --gpus-per-node=h100:1 --cpus-per-task=8 --mem=128000 --time=0-01:15 --job-name=vllm --pty bash
 ```
 
 ## Citation
